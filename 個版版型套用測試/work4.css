@@ -1,7 +1,7 @@
 body
 {
 	background-color:#CCDDFF;
-  text-align:left;
+  text-align:center;
 }
 h1
 {
@@ -17,11 +17,12 @@ p
 }
 table,th,td
 {
-	border:1px solid black;
-  padding:10px #FFFFBB;
+	border:2px solid #008888;
+  padding:5px ;
   align:center;
   color:#003377;
   margin:5px;
+  content:20px #FFFFBB;
   font-weight:700;
 }
 th{background-color:#d0e4fe;}
