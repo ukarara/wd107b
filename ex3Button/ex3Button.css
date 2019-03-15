@@ -1,0 +1,19 @@
+<style>
+button
+	{
+		background-color:#00DDAA;
+		color:#FFFFBB;
+		font-size: 15px;
+		font-weight :700;
+		border:5px solid #5555FF;
+		width:70px;	
+	}
+#b4,#b2
+	{
+		background-color:#FFB3FF;
+		color:#FFFFBB;
+		border:5px solid #FFEE99;
+		width:70px;	
+	}
+	
+</style>
