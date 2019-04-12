@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ukarara.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.h1 {
+color: 	#4400B3;
+text-align: center;
+}
+.p {
+color: black;
+text-align: center;
+	
+}
+body {
+	margin: 0px; 
+	background-color:#FFFFBB;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #FFC8B4;
+  font-family: Lucida Sans , sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+	background-color:#CCFF99;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #FFC8B4;
+	color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color:#CCFF99;
+	color:	#55AA00;
+	
+}
+
+.sidebar {
+	position: fixed;
+	top: 46px;
+	left: 0px;
+	width: 20px;
+	height: 1000px;
+	background-color: #CCDDFF;
+	font-weight:bold;
+	text-align: center;
+	
+	overflow:hidden;
+	white-space:nowrap;
+
+}
+.sidebar a {
+	color:#00AA55;
+	text-decoration: none;
+	
+}
+.sidebar li, .sidebar ul {
+	list-style-type: none;
+	margin: 5px 5px;
+	padding: 10px;
+}
+.sidebar {
+	transition: width 0.5s;
+	background-color :#CCDDFF;
+ }
+.sidebar a:hover {
+	background-color:#CCFF99;
+	font-size: 20px;  
+	color:	white;
+}
+.sidebar:hover {
+	width: 120px; 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+	color:blue;
+  margin:20px;
+ 
+}
+.aside {
+  background-color:#5599FF;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+​
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+	<ul>
+	<li><a href="#生活趣事">生活趣事</a>
+	<li><a href="#圖文創作">圖文創作</a>
+	<li><a href="#吉他教學">吉他教學</a>
+	<li><a href="#程式代碼">程式代碼</a>
+	</ul>
+</div>
+<div class="navbar">
+	<b>
+	<a href="#主頁">Ukarara</a>
+	<a href="#ISTAGRAM">IG</a>
+	<a href="#twitter">Twitter</a></b>
+  <div class="dropdown">
+  <button class="dropbtn">分類</button>
+  <div class="dropdown-content">
+    <a href="#相簿">相簿</a>
+    <a href="#音樂">音樂</a>
+    <a href="#程式碼">程式碼</a>
+  </div>
+  </div> 
+</div>
+<div class="col-6 col-m-12">
+<h1>置頂文章</h1>
+<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+</div>
+<div class="col-3 col-m-10">
+<div class="aside">
+<h2>What?</h2>
+<p>Chania is a city on the island of Crete.</p>
+<h2>Where?</h2>
+<p>Crete is a Greek island in the Mediterranean Sea.</p>
+</div>
+</div>
+
+
+</body>
+</html>
