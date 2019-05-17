@@ -12,7 +12,7 @@
 計算機
 -歸零
 -四則運算
-．．．js
+...js
 　  function calculate() {
     var a = document.getElementById('a')
     var op = document.getElementById('op')
@@ -20,4 +20,4 @@
     var result = document.getElementById('result')
     result.innerText = eval(a.value + op.value + b.value)
   }
-．．．
+...
