@@ -1,0 +1,23 @@
+專案說明
+
+## 01
+個人網頁
+-時間系統
+-日期系統
+-搜尋
+
+‵`
+
+##02
+計算機
+-歸零
+-四則運算
+．．．js
+　  function calculate() {
+    var a = document.getElementById('a')
+    var op = document.getElementById('op')
+    var b = document.getElementById('b')
+    var result = document.getElementById('result')
+    result.innerText = eval(a.value + op.value + b.value)
+  }
+．．．
