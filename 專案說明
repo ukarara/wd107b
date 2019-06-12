@@ -2,22 +2,30 @@
 
 ## 01
 個人網頁
+-主選項列附設下拉選單(FB、IG、TWITTER...)
+-側邊響應式主題欄
 -時間系統
 -日期系統
 -搜尋
 
-‵`
 
 ##02
-計算機
+bmi計算機
 -歸零
--四則運算
+-計算
 ...js
-　  function calculate() {
-    var a = document.getElementById('a')
-    var op = document.getElementById('op')
-    var b = document.getElementById('b')
-    var result = document.getElementById('result')
-    result.innerText = eval(a.value + op.value + b.value)
-  }
+　  	<script>
+function equal(){
+x = document.getElementById("box1").value;
+y = document.getElementById("box2").value;
+z = y/(x*x);
+document.getElementById("box3").value = parseFloat(z.toFixed(2));
+}
+function reset(){
+document.getElementById("box1").value="";
+document.getElementById("box2").value="";
+document.getElementById("box3").value="";
+}
+		
+   </script>
 ...
