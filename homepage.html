@@ -191,6 +191,7 @@ table{
 <p>姓名:蘇祐汝</p>
 <p>學號:110710516</p>
 <p>班級:資工一</p>
+<div id="audioBox">
 <span id="digitalclock" class="styling"></span>
 </div>
 </div>
@@ -350,11 +351,24 @@ document.getElementById("box3").value="";
   }
   window.onload=show
   
-  
-  
-  
-  </script>
-  
 
+window.onload = function(){ 
+var arr = ["http://www.lmlblog.com/blog/bozhao/images/believe.mp3","http://www.lmlblog.com/blog/bozhao/images/shui.mp3"];               //把需要播放的歌曲從後往前排，這裏已添加兩首音樂，可繼續添加多個音樂 
+var myAudio = new Audio(); 
+myAudio.preload = true; 
+myAudio.controls = true; 
+myAudio.src = arr.pop();         //每次讀數組最後一個元素 
+myAudio.addEventListener(‘ended‘, playEndedHandler, false); 
+myAudio.play(); 
+document.getElementById("audioBox").appendChild(myAudio); 
+myAudio.loop = false;//禁止循環，否則無法觸發ended事件 
+function playEndedHandler(){ 
+myAudio.src = arr.pop(); 
+myAudio.play(); 
+console.log(arr.length); 
+!arr.length && myAudio.removeEventListener(‘ended‘,playEndedHandler,false);//只有一個元素時解除綁定 
+} 
+} 
+  </script>
 </body>
 </html>
