@@ -12,14 +12,22 @@ body{
   background-image: url( ' https://www.publicdomainpictures.net/pictures/40000/nahled/yellow-polka-dot-background.jpg ' );
   background-size: cover;
   }
-  table,th,td
+  .styling{
+background-color:#3e58a0;
+color:#ffffff;
+font: bold 35px MS Sans Serif;
+padding: 10px;
+}
+}
+}
+table,th,td,tr
 {
-	border:2px solid #008888;
+	border:6px solid #008888;
   padding:5px ;
   text-align:center;
-  color:#003377;
+  color:#21497e;
   margin:5px;
-  content:20px #FFFFBB;
+  content:20px rgb(81, 194, 223);
   font-weight:700;
 }
 th{background-color:#d0e4fe;}
@@ -43,9 +51,9 @@ table{
   border-radius:.25rem;
   border:15px;
   padding:15px;
-  color:#5599FF;
-  background-color:#FFFFBB;
-  border-bottom-color: #5599FF;
+  color:rgb(31, 29, 158);
+  background-color:rgb(151, 199, 165);
+  border-bottom-color: rgb(48, 138, 85);
   }
   
   
@@ -106,7 +114,6 @@ table{
 	color:	#55AA00;}
 .dropdown:hover .dropdown-content {
   display: block;}
-
 .sidebar {
   opacity:0.9;
 	position: fixed;
@@ -143,6 +150,7 @@ table{
   opacity:0.2;
   position: absolute ;
   width: 185px;
+  height:500px;
   float: right;
   right:20px;
   top:420px;
@@ -157,10 +165,10 @@ table{
   
 .aside:hover {
   opacity:1.0;}
-
 </style>
 </head>
 <body>
+
 <center>
 <div class="headimg"> 
 <img  src="https://i.imgur.com/MABvbP4.jpg" />
@@ -175,16 +183,17 @@ table{
 <p>姓名:蘇祐汝</p>
 <p>學號:110710516</p>
 <p>班級:資工一</p>
+<span id="digitalclock" class="styling"></span>
 </div>
 </div>
 
+
  <div class="navbar">
-    <a class="active" href="Ukarara.com">Home</a>
-    <a href="#Album">Album</a>
-    <a href="#Blog">Blog</a>
-    <a href="https://ukarara.github.io/wd107b/profile.html">Profile</a>
+    <a class="active" href="https://ukarara.github.io/wd107b/homepage.html">Home</a>
+    <a href="https://ukarara.github.io/wd107b/gallery.html">gallary</a>
+    <a href="https://ukarara.github.io/wd107b/profile.html">profile</a>
     <div class="dropdown">
-      <button class="dropbtn">Social</button>
+     <button class="dropbtn">Social</button>
       <div class="dropdown-content">
         <a href="https://www.instagram.com/bravekara/">IG</a>
         <a href="https://twitter.com/a5230716">Twitter</a>
@@ -195,70 +204,89 @@ table{
   </div> 
 
 
-<div class="content">
-<h1>#1 置頂介紹文</h1>
-<table border="1">
-	<tr><td>姓名</td><td>蘇祐汝</td></tr>
-  <tr><td>暱稱</td><td>暮暮 卡啦 魚乾</td></tr>
-	<tr><td>生日</td><td>2000/06/06</td></tr>
-  <tr><td>興趣</td><td>吉他 圖文 程式 遊戲(劍三)</td></tr>
-</table>
+  <div class="content">
+      <h1>#1 置頂介紹文</h1>
+      <table border="1">
+       <p>哈囉!我是蘇祐汝，你可以叫我卡啦或是魚乾，這是我的網頁設計作業。
+         稍微簡單跟你介紹一下我的網頁:上面選擇列中目前有Home(此頁)、Profile(個人介紹)
+         、Social(下拉選單)三個選項可選擇，其中Social是我各式社群軟體的個人頁面。
+         另外此選單列設計會一直在頁面上方，所以隨時都可以做點擊。</p>
+         <p>畫面左中偏上，有個響應式選單，鼠標移動到上面(手機版則為點擊淺藍色豎條)，此選單將會展開。
+         life為個人生活的大小事分享，網站連結到噗浪。Illustrate為繪畫作品分享，
+         目前是暫時連結到ig，以後會整理作品集至其他網頁。Guiter是我常用的吉他譜網站連結，
+         以後會整理更多自己的吉他演奏作品上來。codig則為github連結，希望有朝一日我能把它整理好，
+         並且東西都能成功git上去QHQ。</p>
+         <p>最後，畫面右側，是我的名條，是的，給老師看的。老師拜託給我高分嗚嗚嗚。
+           然後有一些小功能，例如小時鐘，方便你在關注我的，不用怕太入迷，還能注意時間。</p>
+      </table>
+      
+      <h1>#2 BMI計算器</h1>
+      <p>計算方式:體重(公斤)/身高(公尺)^2
+      <br>
+      <table border="2">
+          <tr>
+              <th>程度</th>
+              <th>BMI範圍</th>
+          </tr>
+          <tr>
+              <td>體重過輕</td>
+              <td><18.5</td>
+          </tr>
+          <tr>
+              <td>健康體位</td>
+              <td>8.5<=BMI<24</td>
+          </tr>
+          <tr>
+              <td>過重</td>
+              <td>24<=BMI<27</td>
+          </tr>
+          <tr>
+              <td>輕度肥胖</td>
+              <td>27 <= BMI < 30</td>
+          </tr>
+          <tr>
+              <td>中度肥胖</td>
+              <td>30 <= BMI < 35</td>
+          </tr>
+          <tr>
+              <td>重度肥胖</td>
+              <td>BMI >= 35</td>
+          </tr>
+      </table>
+      <br>
+      <table border="10">
+          <th>腰圍</th>
+          <th>過粗</th>
+          <tr>
+              <td>男性</td>
+              <td>>= 90 公分</td>
+          </tr>
+          <tr>
+              <td>女性</td>
+              <td>>= 80 公分</td>
+          </tr>
+      </table>
+      
+      <br>
+          身高(m): <input type="text"  id="box1" value=""><br>
+          體重(kg): <input type="text"  id="box2" value=""><br>	
+          <input type="button" value="重置" onClick="reset()">
+          <input type="button" value="計算" onClick="equal()"><br>
+        您的BMI值為:<input type="text" name="height" id="box3" value="">
+ 
 
-<h1>#2 BMI計算器</h1>
-<p>計算方式:體重(公斤)/身高(公尺)^2
-<br>
-<table border="2">
-    <tr>
-        <th>程度</th>
-        <th>BMI範圍</th>
-    </tr>
-    <tr>
-        <td>體重過輕</td>
-        <td><18.5</td>
-    </tr>
-    <tr>
-        <td>健康體位</td>
-        <td>8.5<=BMI<24</td>
-    </tr>
-    <tr>
-        <td>過重</td>
-        <td>24<=BMI<27</td>
-    </tr>
-    <tr>
-        <td>輕度肥胖</td>
-        <td>27 <= BMI < 30</td>
-    </tr>
-    <tr>
-        <td>中度肥胖</td>
-        <td>30 <= BMI < 35</td>
-    </tr>
-    <tr>
-        <td>重度肥胖</td>
-        <td>BMI >= 35</td>
-    </tr>
-</table>
-<br>
-<table border="10">
-    <th>腰圍</th>
-    <th>過粗</th>
-    <tr>
-        <td>男性</td>
-        <td>>= 90 公分</td>
-    </tr>
-    <tr>
-        <td>女性</td>
-        <td>>= 80 公分</td>
-    </tr>
-</table>
+<div class="sidebar">
+	<ul>
+  <h1>Topic</h1>
+	<li><a href="#https://www.plurk.com/KUROKATE">Life</a>https://www.youtube.com/watch?v=GedcwChv85k&list=RDGedcwChv85k&start_radio=1
+	<li><a href="#https://www.instagram.com/kurohkate/">Illustrate</a>
+	<li><a href="https://yoopu.me/start">Guitar</a>
+	<li><a href="https://github.com/ukarara">Coding</a>
+  </ul>
+</div>
 
-<br>
-    身高(m): <input type="text"  id="box1" value=""><br>
-    體重(kg): <input type="text"  id="box2" value=""><br>	
-    <input type="button" value="重置" onClick="reset()">
-    <input type="button" value="計算" onClick="equal()"><br>
-	您的BMI值為:<input type="text" name="height" id="box3" value="">
-	
-	<script>
+<script type ="text/jscript" >
+
 function equal(){
 x = document.getElementById("box1").value;
 y = document.getElementById("box2").value;
@@ -270,21 +298,55 @@ document.getElementById("box1").value="";
 document.getElementById("box2").value="";
 document.getElementById("box3").value="";
 }
-		
-   </script>
+    
 
-</div> 
- 
-
-<div class="sidebar">
-	<ul>
-  <h1>Topic</h1>
-	<li><a href="#https://www.plurk.com/KUROKATE">Life</a>
-	<li><a href="#https://www.instagram.com/kurohkate/">Illustrate</a>
-	<li><a href="https://yoopu.me/start">Guitar</a>
-	<li><a href="https://github.com/ukarara">Coding</a>
-	</ul>
-</div>
+  var alternate=0
+  var standardbrowser=!document.all&&!document.getElementById
+  
+  if (standardbrowser)
+  document.write('<form name="tick"><input type="text" name="tock" size="6"></form>')
+  
+  function show(){
+  if (!standardbrowser)
+  var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+  var Digital=new Date()
+  var hours=Digital.getHours()
+  var minutes=Digital.getMinutes()
+  var dn="AM"
+  
+  if (hours==12) dn="PM" 
+  if (hours>12){
+  dn="PM"
+  hours=hours-12
+  }
+  if (hours==0) hours=12
+  if (hours.toString().length==1)
+  hours="0"+hours
+  if (minutes<=9)
+  minutes="0"+minutes
+  
+  if (standardbrowser){
+  if (alternate==0)
+  document.tick.tock.value=hours+" : "+minutes+" "+dn
+  else
+  document.tick.tock.value=hours+"   "+minutes+" "+dn
+  }
+  else{
+  if (alternate==0)
+  clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup style='font-size:1px'>"+dn+"</sup>"
+  else
+  clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup style='font-size:1px'>"+dn+"</sup>"
+  }
+  alternate=(alternate==0)? 1 : 0
+  setTimeout("show()",1000)
+  }
+  window.onload=show
+  
+  
+  
+  
+  </script>
+  
 
 </body>
 </html>
