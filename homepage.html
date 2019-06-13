@@ -55,7 +55,7 @@ table{
   background-color:rgb(151, 199, 165);
   border-bottom-color: rgb(48, 138, 85);
   }
-  button{
+ .button{
 	background-color:#00DDAA;
 	color:#FFFFBB;
 	font-size: 15px;
@@ -63,7 +63,6 @@ table{
 	border:5px solid #5555FF;
 	width:70px;	
 	}
-
   
 .navbar {
   font-size: 20px;
@@ -176,14 +175,11 @@ table{
 </style>
 </head>
 <body>
-
 <center>
 <div class="headimg"> 
 <img  src="https://i.imgur.com/MABvbP4.jpg" />
 </div>
 </center>
-
-
 <div class="aside">
 <div class="me">
 <p>About me</p>
@@ -194,8 +190,6 @@ table{
 <span id="digitalclock" class="styling"></span>
 </div>
 </div>
-
-
  <div class="navbar">
     <a class="active" href="https://ukarara.github.io/wd107b/homepage.html">Home</a>
     <a href="https://ukarara.github.io/wd107b/gallery.html">gallary</a>
@@ -210,8 +204,6 @@ table{
       </div>
     </div> 
   </div> 
-
-
   <div class="content">
       <h1>#1 置頂介紹文</h1>
       <table border="1">
@@ -282,19 +274,16 @@ table{
           <input type="button" value="計算" onClick="equal()"><br>
         您的BMI值為:<input type="text" name="height" id="box3" value="">
  
-
 <div class="sidebar">
 	<ul>
   <h1>Topic</h1>
 	<li><a href="#https://www.plurk.com/KUROKATE">Life</a>
-	<li><a href="#https://www.instagram.com/kurohkate/">Illustrate</a>
+	<li><a href="https://ukarara.github.io/wd107b/gallery.html">Illustrate</a>
 	<li><a href="https://yoopu.me/start">Guitar</a>
 	<li><a href="https://github.com/ukarara">Coding</a>
   </ul>
 </div>
-
 <script type ="text/jscript" >
-
 function equal(){
 x = document.getElementById("box1").value;
 y = document.getElementById("box2").value;
@@ -307,7 +296,6 @@ document.getElementById("box2").value="";
 document.getElementById("box3").value="";
 }
     
-
   var alternate=0
   var standardbrowser=!document.all&&!document.getElementById
   
@@ -351,5 +339,6 @@ document.getElementById("box3").value="";
   window.onload=show
   
   </script>
+  
 </body>
 </html>
